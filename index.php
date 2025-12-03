@@ -33,7 +33,7 @@
 
 </head>
 
-<!-- Example Deploy 3 -->
+<!-- Example Deploy -->
 
 <body>
 
