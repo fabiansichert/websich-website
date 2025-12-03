@@ -1,0 +1,26 @@
+//
+//    *************************************************************************
+//    *                                                                       *
+//    *               ╔╗╔╗╔╗ ╔═══╗ ╔══╗  ╔══╗ ╔══╗ ╔══╗ ╔╗╔╗                  *
+//    *               ║║║║║║ ║╔══╝ ║╔╗║  ║╔═╝ ╚╗╔╝ ║╔═╝ ║║║║                  *
+//    *               ║║║║║║ ║╚══╗ ║╚╝╚╗ ║╚═╗  ║║  ║║   ║╚╝║                  *
+//    *               ║║║║║║ ║╔══╝ ║╔═╗║ ╚═╗║  ║║  ║║   ║╔╗║                  *
+//    *               ║╚╝╚╝║ ║╚══╗ ║╚═╝║ ╔═╝║ ╔╝╚╗ ║╚═╗ ║║║║                  *
+//    *               ╚═╝╚═╝ ╚═══╝ ╚═══╝ ╚══╝ ╚══╝ ╚══╝ ╚╝╚╝                  *
+//    *                                                                       *
+//    *************************************************************************
+
+Site: websich.de
+
+/* Developer */
+Developer: Fabian Sichert
+Role: IT Security & Fullstack Developer
+Email: fabian@websich.de
+
+/* Designer */
+Designer: Fabian Sichert
+Role: Webdesigner
+Email: fabian@websich.de
+
+/* NOTE */
+Keep it simple, keep it clean.
