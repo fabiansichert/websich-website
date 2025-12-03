@@ -13,7 +13,7 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v3.1.1
         with:
-          ftp-server: ${{ secrets.FTP_SERVER }}/html/websich/
+          ftp-server: ${{ secrets.FTP_SERVER }}
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
-          git-ftp-args: "--init --remote-root html/websich"
+          git-ftp-args: "--init"
