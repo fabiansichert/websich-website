@@ -1,7 +1,6 @@
 <?php
 
-$configPath = rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'files' . DIRECTORY_SEPARATOR . 'config.php';
-$configPath = realpath($configPath);
+$configPath = realpath($_SERVER['DOCUMENT_ROOT'] . '/../../files/config.php');
 
 function fail($reason) {
     header("Location: /index.php?success=false&reason=$reason");
