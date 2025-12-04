@@ -33,8 +33,6 @@
 
 </head>
 
-<!-- Example Deploy -->
-
 <body>
 
 <?php
