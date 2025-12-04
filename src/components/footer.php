@@ -29,9 +29,9 @@
             <a href="https://www.facebook.com/websich" target="_blank" aria-label="Zu Facebook"><img loading="lazy" src="/assets/icons/facebook.svg" alt="Facebook Logo"></a>
         </div>
         <div id="legal-links">
-            <a aria-label="Zu den Cookies" href="/cookies.php">Cookies</a>
-            <a aria-label="Zum Impressum" href="/impressum.php">Impressum</a>
-            <a aria-label="Zur Datenschutzerklärung" href="/datenschutz.php">Datenschutz</a>
+            <a aria-label="Zu den Cookies" href="/cookies">Cookies</a>
+            <a aria-label="Zum Impressum" href="/impressum">Impressum</a>
+            <a aria-label="Zur Datenschutzerklärung" href="/datenschutz">Datenschutz</a>
         </div>
         <span id="copyright">© <span id="year"></span> Websich <br> All rights reserved.</span>
     </div>
