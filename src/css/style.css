@@ -62,18 +62,27 @@
 
 }
 
+
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    max-width: 100%;
 }
 
 body {
     width: 100%;
     min-width: 320px;
-    /*overflow-x: hidden;*/
     background-color: var(--background-color);
     font-family: "Outfit";
 }
+
 
 body {
   animation: fadeIn 0.5s ease-in;
@@ -156,10 +165,10 @@ img {
 }
 
 /* Varianten für unterschiedliche Richtungen */
-.left { transform: translateX(-50px); }
-.right { transform: translateX(50px); }
-.top { transform: translateY(-50px); }
-.bottom { transform: translateY(50px); }
+.left { transform: translateX(-5%); }
+.right { transform: translateX(5%); }
+.top { transform: translateY(-5%); }
+.bottom { transform: translateY(5%); }
 
 /* Wenn sichtbar, reset Transformation */
 .left.visible,
@@ -503,6 +512,8 @@ button:disabled:hover {
 header {
     position: sticky;
     top: 0;
+    z-index: 9999;
+    will-change: transform;
     display: flex;
     flex-direction: row;
     align-items: center;
