@@ -43,7 +43,7 @@
         <div id="animation" style=""></div>
         <h1>Fehler <?php echo $status; ?></h1>
         <p><?php echo $message; ?></p>
-        <button aria-label="Zurück zur Startseite" onclick="location.href='/index.php'" class="primary-btn">Zurück zur Startseite</button>
+        <button aria-label="Zurück zur Startseite" onclick="location.href='/'" class="primary-btn">Zurück zur Startseite</button>
     </section>
 
 </main>

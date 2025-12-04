@@ -34,7 +34,7 @@
     Am Hohrain 8<br>
     88605 Krumbach, Sauldorf<br>
     E-Mail: <a href="mailto:info@websich.de">info@websich.de</a><br>
-    <a href="impressum.html">Impressum</a></p>
+    <a href="/impressum.php">Impressum</a></p>
 
     <h2>Maßgebliche Rechtsgrundlagen</h2>
     <ul>

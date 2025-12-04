@@ -6,7 +6,7 @@
                 Websich steht für maßgeschneidertes Webdesign mit Fokus auf Qualität, Performance und Sicherheit.
                 Jede Website wird individuell entwickelt – für Unternehmen, die Wert auf ein starkes digitales Erscheinungsbild legen.
             </p>
-            <a aria-label="Mehr über Websich erfahren" href="/index.php#about">Mehr erfahren</a>
+            <a aria-label="Mehr über Websich erfahren" href="/#about">Mehr erfahren</a>
         </div>
 
         <div id="working-hours">
@@ -29,9 +29,9 @@
             <a href="https://www.facebook.com/websich" target="_blank" aria-label="Zu Facebook"><img loading="lazy" src="/assets/icons/facebook.svg" alt="Facebook Logo"></a>
         </div>
         <div id="legal-links">
-            <a aria-label="Zu den Cookies" href="/src/pages/cookies.php">Cookies</a>
-            <a aria-label="Zum Impressum" href="/src/pages/impressum.php">Impressum</a>
-            <a aria-label="Zur Datenschutzerklärung" href="/src/pages/datenschutz.php">Datenschutz</a>
+            <a aria-label="Zu den Cookies" href="/cookies.php">Cookies</a>
+            <a aria-label="Zum Impressum" href="/impressum.php">Impressum</a>
+            <a aria-label="Zur Datenschutzerklärung" href="/datenschutz.php">Datenschutz</a>
         </div>
         <span id="copyright">© <span id="year"></span> Websich <br> All rights reserved.</span>
     </div>

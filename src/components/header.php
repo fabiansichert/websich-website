@@ -1,15 +1,15 @@
 <header>
     <div id="logo">
-        <a aria-label="Zur Startseite" href="/index.php#">
+        <a aria-label="Zur Startseite" href="/#">
             <img src="/assets/icons/logo.svg" alt="Websich Logo">
         </a>
     </div>
 
     <nav id="desktop">
-        <a aria-label="Zu den Leistungen" href="/index.php#offer">Leistungen</a>
-        <a aria-label="Zu den Projekten" href="/index.php#projects">Projekte</a>
-        <a aria-label="Mehr erfahren über Websich" href="/index.php#about">About</a>
-        <a aria-label="Zu den Kontaktmöglichkeiten" href="/index.php#contact">Kontakt</a>
+        <a aria-label="Zu den Leistungen" href="/#offer">Leistungen</a>
+        <a aria-label="Zu den Projekten" href="/#projects">Projekte</a>
+        <a aria-label="Mehr erfahren über Websich" href="/#about">About</a>
+        <a aria-label="Zu den Kontaktmöglichkeiten" href="/#contact">Kontakt</a>
     </nav>
 
     <div id="header-btn">
@@ -22,10 +22,10 @@
     </div>
 
     <nav id="mobile">
-        <a aria-label="Zu den Leistungen" href="/index.php#offer">Leistungen die begeistern <img src="/assets/icons/chevron.svg" alt="Link folgen icon"></a>
-        <a aria-label="Zu den Projekten" href="/index.php#projects">Projekte die Umsatz machen <img src="/assets/icons/chevron.svg" alt="Link folgen icon"></a>
-        <a aria-label="Mehr erfahren über Websich" href="/index.php#about">Mehr über Websich erfahren <img src="/assets/icons/chevron.svg" alt="Link folgen icon"></a>
-        <a aria-label="Zu den Kontaktmöglichkeiten" href="/index.php#contact">Unverbindlich Kontakt aufnehmen <img src="/assets/icons/chevron.svg" alt="Link folgen icon"></a>
+        <a aria-label="Zu den Leistungen" href="/#offer">Leistungen die begeistern <img src="/assets/icons/chevron.svg" alt="Link folgen icon"></a>
+        <a aria-label="Zu den Projekten" href="/#projects">Projekte die Umsatz machen <img src="/assets/icons/chevron.svg" alt="Link folgen icon"></a>
+        <a aria-label="Mehr erfahren über Websich" href="/#about">Mehr über Websich erfahren <img src="/assets/icons/chevron.svg" alt="Link folgen icon"></a>
+        <a aria-label="Zu den Kontaktmöglichkeiten" href="/#contact">Unverbindlich Kontakt aufnehmen <img src="/assets/icons/chevron.svg" alt="Link folgen icon"></a>
         <span class="animate-on-scroll left">Design is the difference between seen and remembered.</span>
     </nav>
 </header>
