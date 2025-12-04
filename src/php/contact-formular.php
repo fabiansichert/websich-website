@@ -34,7 +34,10 @@ if (!preg_match("/^[0-9 +()-]*$/", $_POST["telefon"])) fail("Ungültige Telefonn
 
 // --- reCAPTCHA prüfen ---
 $recaptcha_secret = $config['CAPTCHA_SECRET'] ?? null;
-$recaptcha_secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
+
+//TEST
+//$recaptcha_secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
+
 $recaptcha_response = $_POST['g-recaptcha-response'] ?? '';
 $recaptcha = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
 $recaptcha = json_decode($recaptcha, true);

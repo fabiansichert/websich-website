@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <?php
-        require_once __DIR__ . '../../php/config.php';
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/src/php/boot.php';
         include COMPONENTS_PATH . 'head.php';
     ?>
 
