@@ -827,6 +827,7 @@ footer #footer-bottom #legal-links {
 
 
     footer #footer-top {
+        margin-top: 3rem;
         flex-direction: column;
         gap: 5rem;
     }
