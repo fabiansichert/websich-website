@@ -522,7 +522,6 @@ main #testimonials #testimonial #profile {
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 50%;
-    background-color: red;
     border: 2px solid var(--highlight-color)
 }
 
@@ -1006,7 +1005,6 @@ main #contacts #contact-elements .contact-element .contact-text {
 
     main #hero p {
         font-size: 1.2rem !important;
-        background-color: red;
         width: 90% !important;
     }
 
