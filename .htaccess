@@ -75,7 +75,8 @@ ErrorDocument 500 /src/pages/error.php
 </IfModule>
 
 <IfModule mod_headers.c>
-Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://assets.calendly.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://assets.calendly.com; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://region2.google-analytics.com; frame-src https://www.google.com https://assets.calendly.com;"
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.gstatic.com https://www.google.com https://www.googletagmanager.com https://assets.calendly.com; script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com https://www.google.com https://www.googletagmanager.com https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://assets.calendly.com; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://region2.google-analytics.com; frame-src https://www.google.com https://assets.calendly.com;"
 </IfModule>
+
 
 
