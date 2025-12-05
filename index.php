@@ -29,7 +29,7 @@
     <link rel="preload" href="/assets/fonts/Merriweather-light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/Allura-Regular.woff2" as="font" type="font/woff2" crossorigin>
-
+    <link rel="preload" href="/assets/images/index/hero-1200.webp" as="image">
 
 </head>
 
@@ -59,7 +59,7 @@
         <div id="overlay-shadow"></div>
 
         <img 
-        fetchpriority="high"
+            fetchpriority="high"
             id="background-img"
             src="/assets/images/index/hero-800.webp"
             srcset="
@@ -68,6 +68,8 @@
                 /assets/images/index/hero-1200.webp 1200w
             "
             sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+            width="1200"
+            height="800"
             alt="Hintergrundbild Hochhaus"
         />
     </section>
@@ -491,47 +493,48 @@
 
         <div id="logo-track-wrapper">
             <div class="logo-track" aria-label="Logos bekannter internationaler Marken">
-                <img loading="lazy" src="/assets/icons/brands/apple.svg" alt="Apple Logo" title="Apple" />
-                <img loading="lazy" src="/assets/icons/brands/audi.svg" alt="Audi Logo" title="Audi" />
-                <img loading="lazy" src="/assets/icons/brands/figma.svg" alt="Figma Logo" title="Figma" />
-                <img loading="lazy" src="/assets/icons/brands/google.svg" alt="Google Logo" title="Google" />
-                <img loading="lazy" src="/assets/icons/brands/lamborghini.svg" alt="Lamborghini Logo" title="Lamborghini" />
-                <img loading="lazy" src="/assets/icons/brands/landrover.svg" alt="Land Rover Logo" title="Land Rover" />
-                <img loading="lazy" src="/assets/icons/brands/meta.svg" alt="Meta Logo" title="Meta" />
-                <img loading="lazy" src="/assets/icons/brands/netflix.svg" alt="Netflix Logo" title="Netflix" />
-                <img loading="lazy" src="/assets/icons/brands/nike.svg" alt="Nike Logo" title="Nike" />
-                <img loading="lazy" src="/assets/icons/brands/notion.svg" alt="Notion Logo" title="Notion" />
-                <img loading="lazy" src="/assets/icons/brands/nvidia.svg" alt="NVIDIA Logo" title="NVIDIA" />
-                <img loading="lazy" src="/assets/icons/brands/openai.svg" alt="OpenAI Logo" title="OpenAI" />
-                <img loading="lazy" src="/assets/icons/brands/paypal.svg" alt="PayPal Logo" title="PayPal" />
-                <img loading="lazy" src="/assets/icons/brands/porsche.svg" alt="Porsche Logo" title="Porsche" />
-                <img loading="lazy" src="/assets/icons/brands/samsung.svg" alt="Samsung Logo" title="Samsung" />
-                <img loading="lazy" src="/assets/icons/brands/shopify.svg" alt="Shopify Logo" title="Shopify" />
-                <img loading="lazy" src="/assets/icons/brands/spotify.svg" alt="Spotify Logo" title="Spotify" />
-                <img loading="lazy" src="/assets/icons/brands/tesla.svg" alt="Tesla Logo" title="Tesla" />
+                <img loading="lazy" src="/assets/icons/brands/apple.svg" alt="Apple Logo" title="Apple" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/audi.svg" alt="Audi Logo" title="Audi" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/figma.svg" alt="Figma Logo" title="Figma" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/google.svg" alt="Google Logo" title="Google" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/lamborghini.svg" alt="Lamborghini Logo" title="Lamborghini" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/landrover.svg" alt="Land Rover Logo" title="Land Rover" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/meta.svg" alt="Meta Logo" title="Meta" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/netflix.svg" alt="Netflix Logo" title="Netflix" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/nike.svg" alt="Nike Logo" title="Nike" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/notion.svg" alt="Notion Logo" title="Notion" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/nvidia.svg" alt="NVIDIA Logo" title="NVIDIA" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/openai.svg" alt="OpenAI Logo" title="OpenAI" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/paypal.svg" alt="PayPal Logo" title="PayPal" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/porsche.svg" alt="Porsche Logo" title="Porsche" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/samsung.svg" alt="Samsung Logo" title="Samsung" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/shopify.svg" alt="Shopify Logo" title="Shopify" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/spotify.svg" alt="Spotify Logo" title="Spotify" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/tesla.svg" alt="Tesla Logo" title="Tesla" width="100" height="100" />
             </div>
 
             <div class="logo-track" aria-label="Logos bekannter internationaler Marken">
-                <img loading="lazy" src="/assets/icons/brands/apple.svg" alt="Apple Logo" title="Apple" />
-                <img loading="lazy" src="/assets/icons/brands/audi.svg" alt="Audi Logo" title="Audi" />
-                <img loading="lazy" src="/assets/icons/brands/figma.svg" alt="Figma Logo" title="Figma" />
-                <img loading="lazy" src="/assets/icons/brands/google.svg" alt="Google Logo" title="Google" />
-                <img loading="lazy" src="/assets/icons/brands/lamborghini.svg" alt="Lamborghini Logo" title="Lamborghini" />
-                <img loading="lazy" src="/assets/icons/brands/landrover.svg" alt="Land Rover Logo" title="Land Rover" />
-                <img loading="lazy" src="/assets/icons/brands/meta.svg" alt="Meta Logo" title="Meta" />
-                <img loading="lazy" src="/assets/icons/brands/netflix.svg" alt="Netflix Logo" title="Netflix" />
-                <img loading="lazy" src="/assets/icons/brands/nike.svg" alt="Nike Logo" title="Nike" />
-                <img loading="lazy" src="/assets/icons/brands/notion.svg" alt="Notion Logo" title="Notion" />
-                <img loading="lazy" src="/assets/icons/brands/nvidia.svg" alt="NVIDIA Logo" title="NVIDIA" />
-                <img loading="lazy" src="/assets/icons/brands/openai.svg" alt="OpenAI Logo" title="OpenAI" />
-                <img loading="lazy" src="/assets/icons/brands/paypal.svg" alt="PayPal Logo" title="PayPal" />
-                <img loading="lazy" src="/assets/icons/brands/porsche.svg" alt="Porsche Logo" title="Porsche" />
-                <img loading="lazy" src="/assets/icons/brands/samsung.svg" alt="Samsung Logo" title="Samsung" />
-                <img loading="lazy" src="/assets/icons/brands/shopify.svg" alt="Shopify Logo" title="Shopify" />
-                <img loading="lazy" src="/assets/icons/brands/spotify.svg" alt="Spotify Logo" title="Spotify" />
-                <img loading="lazy" src="/assets/icons/brands/tesla.svg" alt="Tesla Logo" title="Tesla" />
+                <img loading="lazy" src="/assets/icons/brands/apple.svg" alt="Apple Logo" title="Apple" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/audi.svg" alt="Audi Logo" title="Audi" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/figma.svg" alt="Figma Logo" title="Figma" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/google.svg" alt="Google Logo" title="Google" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/lamborghini.svg" alt="Lamborghini Logo" title="Lamborghini" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/landrover.svg" alt="Land Rover Logo" title="Land Rover" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/meta.svg" alt="Meta Logo" title="Meta" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/netflix.svg" alt="Netflix Logo" title="Netflix" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/nike.svg" alt="Nike Logo" title="Nike" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/notion.svg" alt="Notion Logo" title="Notion" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/nvidia.svg" alt="NVIDIA Logo" title="NVIDIA" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/openai.svg" alt="OpenAI Logo" title="OpenAI" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/paypal.svg" alt="PayPal Logo" title="PayPal" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/porsche.svg" alt="Porsche Logo" title="Porsche" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/samsung.svg" alt="Samsung Logo" title="Samsung" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/shopify.svg" alt="Shopify Logo" title="Shopify" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/spotify.svg" alt="Spotify Logo" title="Spotify" width="100" height="100" />
+                <img loading="lazy" src="/assets/icons/brands/tesla.svg" alt="Tesla Logo" title="Tesla" width="100" height="100" />
             </div>
         </div>
+
     </div>
 
     <section id="testimonials">
@@ -904,17 +907,4 @@
     
 </body>
 
-
-<script src="https://www.google.com/recaptcha/api.js?render=6LeprhIsAAAAAGkqJca9uk0UYotEJNTuLrCgqQMt"></script>
-<script>
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6LeprhIsAAAAAGkqJca9uk0UYotEJNTuLrCgqQMt', {action: 'submit'}).then(function(token) {
-            document.getElementById('g-recaptcha-response').value = token;
-            e.target.submit();
-        });
-    });
-});
-</script>
 </html>

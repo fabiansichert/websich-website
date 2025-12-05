@@ -207,3 +207,41 @@ function insertJSONLD() {
     document.head.appendChild(script);
 }
 insertJSONLD();
+
+
+// =======================
+// reCAPTCHA v3 on-demand
+// =======================
+document.addEventListener("DOMContentLoaded", () => {
+
+    submitBtn.addEventListener("click", async (e) => {
+
+        // Wenn Formular ungültig → abbrechen
+        if (submitBtn.disabled) return;
+
+        e.preventDefault();
+
+        await loadRecaptchaScript();
+
+        grecaptcha.ready(async () => {
+            const token = await grecaptcha.execute("6LeprhIsAAAAAGkqJca9uk0UYotEJNTuLrCgqQMt", { action: "submit" });
+            document.getElementById("g-recaptcha-response").value = token;
+            form.submit();
+        });
+    });
+});
+
+function loadRecaptchaScript() {
+    return new Promise((resolve) => {
+        if (window.grecaptcha) return resolve();
+
+        const script = document.createElement("script");
+        script.src = "https://www.google.com/recaptcha/api.js?render=6LeprhIsAAAAAGkqJca9uk0UYotEJNTuLrCgqQMt";
+        script.async = true;
+        script.defer = true;
+        script.onload = resolve;
+
+        document.head.appendChild(script);
+    });
+}
+

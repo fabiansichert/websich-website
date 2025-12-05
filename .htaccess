@@ -18,7 +18,7 @@ Redirect 301 /html/kontakt.html /
 Redirect 301 /html/ueberuns.html /
 Redirect 301 /html/impressum.html /impressum
 Redirect 301 /html/datenschutz.html /datenschutz
-Redirect 301 /html/agb.html /error
+Redirect 301 /html/agb.html /
 
 # ==========================================================
 # Pretty URLs für neue Seiten
