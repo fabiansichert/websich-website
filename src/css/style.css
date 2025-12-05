@@ -83,16 +83,6 @@ body {
     font-family: "Outfit";
 }
 
-
-body {
-  animation: fadeIn 0.5s ease-in;
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-
 h1,h2,h3,h4 {
     font-family: "Merriweather-light";
     font-weight: lighter;

@@ -19,7 +19,7 @@
     <link rel="manifest" href="/assets/favicons/site.webmanifest">
 
     <!-- Browser UI -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#14222A">
     <meta name="theme-color" content="#14222A">
     <meta name="color-scheme" content="dark">

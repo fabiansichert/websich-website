@@ -576,46 +576,48 @@
                 <div class="form-col">
                     <div class="form-row">
                         <label for="vorname">Vorname <span class="required">*</span></label>
-                        <input type="text" id="vorname" name="vorname" required>
+                        <input type="text" id="vorname" name="vorname" autocomplete="given-name" required>
                         <span class="form-error-msg">Bitte geben Sie einen gültigen Wert ein.</span>
                     </div>
 
                     <div class="form-row">
                         <label for="nachname">Nachname <span class="required">*</span></label>
-                        <input type="text" id="nachname" name="nachname" required>
+                        <input type="text" id="nachname" name="nachname" autocomplete="family-name" required>
                         <span class="form-error-msg">Bitte geben Sie einen gültigen Wert ein.</span>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <label for="email">E-Mail <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
                     <span class="form-error-msg">Bitte geben Sie einen gültigen Wert ein.</span>
                 </div>
 
                 <div class="form-row">
                     <label for="telefon">Telefonnummer <span class="required">*</span></label>
-                    <input type="tel" id="telefon" name="telefon" required>
+                    <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
                     <span class="form-error-msg">Bitte geben Sie einen gültigen Wert ein.</span>
                 </div>
 
                 <div class="form-row">
                     <label for="nachricht">Nachricht</label>
-                    <textarea id="nachricht" name="nachricht" rows="5"></textarea>
+                    <textarea id="nachricht" name="nachricht" rows="5" autocomplete="off"></textarea>
                 </div>
+
                 <input type="text" name="website" style="display:none;">
                 <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 
                 <div class="form-legal">
-                <label class="checkbox">
-                    <input type="checkbox" name="privacy" required>
-                    <span class="checkmark"></span>
-                    Ich habe die Datenschutzerklärung gelesen und stimme zu.<span class="required">*</span>
-                </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="privacy" autocomplete="off" required>
+                        <span class="checkmark"></span>
+                        Ich habe die Datenschutzerklärung gelesen und stimme zu.<span class="required">*</span>
+                    </label>
                 </div>
 
                 <button aria-label="Kontaktformular Absenden" type="submit" class="btn-submit">Absenden</button>
             </form>
+
             <div id="contact-elements" class="grid">
                 <!-- WhatsApp -->
                 <a aria-label="Per Whatsapp schreiben" class="contact-element animate-on-scroll right" href="https://wa.me/4915164466131" target="_blank" rel="noopener">
