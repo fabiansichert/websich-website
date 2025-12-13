@@ -188,7 +188,11 @@ button:disabled {
 
 .primary-btn {
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    justify-content: center;
     font-weight: 600;
     color: var(--background-color);
     border: none;
@@ -233,6 +237,14 @@ button:disabled {
     100% {
         left: 125%;
     }
+}
+
+.primary-btn .small-txt {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 200;
+    opacity: 0.7;
 }
 
 .secundary-btn {

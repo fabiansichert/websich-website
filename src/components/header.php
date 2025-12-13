@@ -13,7 +13,7 @@
     </nav>
 
     <div id="header-btn">
-        <button id="header-cta" aria-label="Zur Terminauswahl" class="calendlyButton primary-btn">Jetzt Termin sichern</button>
+        <button id="header-cta" aria-label="Zur Terminauswahl" class="calendlyButton primary-btn">Erstgespräch buchen</button>
         <button id="hamburger" aria-label="Toggle menu" type="button">
             <span></span>
             <span></span>

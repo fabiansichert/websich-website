@@ -46,13 +46,13 @@
         <div id="hero-text-overlay" class="animate-on-scroll bottom">
             <div id="hero-heading">
                 <span>Premium</span>
-                <h1>Webseiten<br> die begeistern</h1>
+                <h1>Webseiten<br> die verkaufen</h1>
             </div>
             <p>
-                Ich entwickle maßgeschneiderte Webseiten, die mit Design, Technik und Gefühl überzeugen – handgefertigt und perfekt auf Ihr Unternehmen abgestimmt.
+                Ich entwickle maßgeschneiderte Webseiten, die mit Design und Technik verkaufen – handgefertigt und perfekt auf Ihr Unternehmen abgestimmt.
             </p>
             <div id="hero-cta">
-                <button aria-label="Zur Terminauswahl" class="calendlyButton primary-btn">Jetzt Projekt starten</button>
+                <button aria-label="Zur Terminauswahl" class="calendlyButton primary-btn">Erstgespräch buchen<div class="small-txt">Kostenlos - 30min</div></button>
                 <button aria-label="Zu den Kontaktmöglichkeiten" class="secundary-btn" onclick="location.href='#contact'">Kontakt aufnehmen</button>
             </div>
         </div>
@@ -84,16 +84,14 @@
                 <img loading="lazy" src="/assets/icons/code.svg" alt="Code Icon">
                 <h3>Webentwicklung</h3>
                 <p>
-                    Ich entwickle performante und sichere Webseiten mit klarer Struktur und moderner Technik.
-                    Sauberer Code, schnelle Ladezeiten und höchste Qualität bis ins Detail.
+                    Maßgeschneiderte Websites, die technisch sauber umgesetzt sind, schnell laden und langfristig zuverlässig funktionieren.
                 </p>
             </div>
             <div class="offer-card animate-on-scroll bottom">
                 <img loading="lazy" src="/assets/icons/design.svg" alt="Design Icon">
                 <h3>Webdesign</h3>
                 <p>
-                    Jedes Projekt entsteht aus einem klaren Konzept und einem Auge fürs Detail. 
-                    Farben, Typografie und Layout verschmelzen zu einer harmonischen Komposition.
+                    Durchdachtes Design, das Vertrauen schafft, Nutzer führt und gezielt zu Anfragen oder Buchungen leitet.
                 </p>
             </div>
             <div class="offer-card animate-on-scroll bottom">
@@ -455,12 +453,11 @@
                         <h3>Fabian Sichert</h3>                     
                     </div>
                     <p>
-                        Ich bin kein klassisches Webstudio, sondern Ihr persönlicher Partner für modernes, sicheres und wirkungsvolles Webdesign. 
-                        Mein Anspruch: Websites schaffen, die nicht nur optisch überzeugen, sondern nachhaltig Eindruck hinterlassen – bei Ihren Kunden und in Ihrer Marke.
+                        Ich entwickle individuell programmierte Websites für Unternehmen, die online nicht nur präsent sein, sondern Kunden gewinnen wollen.
                         <br><br>
-                        Von der ersten Idee bis zum Go-Live erhalten Sie bei mir alles aus einer Hand – Design, Entwicklung, Technik und Hosting. 
-                        Dabei stehen direkte Kommunikation, ehrliche Beratung und höchste Qualität im Mittelpunkt. 
-                        Jede Website ist ein Unikat – mit Leidenschaft, Präzision und dem Ziel, das Beste aus Ihrer digitalen Präsenz herauszuholen.
+                        Statt Baukästen oder Standardlösungen setze ich auf saubere Technik, Performance und klare Strukturen. Jedes Projekt entsteht aus einer konkreten Zielsetzung heraus – angepasst an Branche, Zielgruppe und Wachstum.
+                        <br><br>
+                        Von der ersten Idee bis zum Go-Live erhalten Sie alles aus einer Hand: Design, Entwicklung, Technik und Hosting. Direkte Kommunikation, ehrliche Beratung und höchste Qualität stehen dabei im Mittelpunkt.                  
                     </p>
                     <div>
                         <button aria-label="Email direkt an Fabian Sichert schreiben" class="img-btn" onclick="location.href='mailto:fabian@websich.de'"><img loading="lazy" src="/assets/icons/mail.svg" alt="E-Mail Icon"><span style="white-space: nowrap">Persönlich schreiben</span></button>
@@ -651,8 +648,8 @@
                     <div class="calendlyButton overlay-div"></div>
                     <img loading="lazy" src="/assets/icons/calendar.svg" alt="Termin buchen Icon">
                     <div class="contact-text">
-                    <h3>Termin aussuchen</h3>
-                    <span>Jetzt Termin wählen</span>
+                    <h3>Erstgespräch buchen</h3>
+                    <span>Kostenloses Erstgespräch (30min)</span>
                     </div>
                 </a>
             </div>
@@ -666,6 +663,40 @@
         </div>
 
         <div id="faq-questions">
+
+            <!-- Ablauf -->
+            <div class="faq-question animate-on-scroll left">
+            <div class="question">
+                <div class="question-text">
+                <img loading="lazy" src="/assets/icons/faq/process.svg" alt="Zahnrad Icon">
+                <h3>Wie läuft das Erstgespräch ab?</h3>
+                </div>
+                <img loading="lazy" class="chevron" src="/assets/icons/chevron.svg" alt="Registerkarte aufklappen Icon">                  
+            </div>
+            <div class="answer">
+                <p>
+                Wir besprechen Ihre Ziele, prüfen Ihre aktuelle Situation und klären, ob und wie eine Zusammenarbeit sinnvoll ist.
+                </p>
+                <a aria-label="Mehr über den Prozess erfahren" href="#process">Mehr erfahren</a>
+            </div>
+            </div>
+
+            <!-- Kosten -->
+            <div class="faq-question animate-on-scroll left">
+            <div class="question">
+                <div class="question-text">
+                <img loading="lazy" src="/assets/icons/faq/money.svg" alt="Geld Icon">
+                <h3>Ist das Erstgespräch wirklich kostenlos?</h3>
+                </div>
+                <img loading="lazy" class="chevron" src="/assets/icons/chevron.svg" alt="Registerkarte aufklappen Icon">                  
+            </div>
+            <div class="answer">
+                <p>
+                Ja. Das Erstgespräch ist unverbindlich und kostenlos.
+                </p>
+            </div>
+            </div>
+
 
             <!-- Ablauf -->
             <div class="faq-question animate-on-scroll left">
@@ -744,7 +775,7 @@
             </div>
             </div>
 
-            <!-- Änderungen -->
+            <!-- Änderungen
             <div class="faq-question animate-on-scroll left">
             <div class="question">
                 <div class="question-text">
@@ -759,7 +790,7 @@
                 Diese werden einfach nach Aufwand zu meinem üblichen Stundenlohn abgerechnet.
                 </p>
             </div>
-            </div>
+            </div> -->
 
             <!-- Bearbeitung -->
             <div class="faq-question animate-on-scroll left">
@@ -775,7 +806,7 @@
                 Ja. Sie erhalten auf Wunsch vollen Zugriff auf die Website, 
                 um Inhalte anzupassen oder zu erweitern.
                 Wer lieber Unterstützung möchte, kann auch auf eine laufende Betreuung
-                durch mich setzen.
+                durch Websich setzen.
                 </p>
             </div>
             </div>
@@ -798,7 +829,7 @@
             </div>
             </div>
 
-            <!-- Inhalte -->
+            <!-- Inhalte 
             <div class="faq-question animate-on-scroll left">
             <div class="question">
                 <div class="question-text">
@@ -814,9 +845,9 @@
                 Ich achte bei allen Inhalten auf klare Sprache, gute Lesbarkeit und optimale SEO-Struktur.
                 </p>
             </div>
-            </div>
+            </div>-->
 
-            <!-- Shops -->
+            <!-- Shops 
             <div class="faq-question animate-on-scroll left">
             <div class="question">
                 <div class="question-text">
@@ -831,9 +862,9 @@
                 Einfache Shop- oder Buchungslösungen sind jedoch auf Anfrage möglich – gerne einfach ansprechen.
                 </p>
             </div>
-            </div>
+            </div>-->
 
-            <!-- Integrationen -->
+            <!-- Integrationen 
             <div class="faq-question animate-on-scroll left">
             <div class="question">
                 <div class="question-text">
@@ -849,9 +880,9 @@
                 Welche Systeme genau integriert werden können, hängt natürlich vom jeweiligen Anbieter und Projektumfang ab – aber sprechen sie mich einfach darauf an, ich prüfe das gerne vorab.
                 </p>
             </div>
-            </div>
+            </div>-->
 
-            <!-- Zusammenarbeit -->
+            <!-- Zusammenarbeit 
             <div class="faq-question animate-on-scroll left">
             <div class="question">
                 <div class="question-text">
@@ -866,7 +897,7 @@
                 Ob Videocall, Telefon oder E-Mail: Ich arbeite mit Kundinnen und Kunden in ganz Deutschland zusammen, effizient und unkompliziert.
                 </p>
             </div>
-            </div>
+            </div>-->
 
             <!-- Unterschied -->
             <div class="faq-question animate-on-scroll left">
@@ -898,7 +929,7 @@
             Lassen Sie uns gemeinsam Ihre neue Website planen – individuell, modern und technisch perfekt umgesetzt.  
             Ich freue mich auf Ihr Projekt.
         </p>
-        <button aria-label="Zur Terminauswahl" class="calendlyButton primary-btn">Zum unverbindlichen Erstgespräch</button>
+        <button aria-label="Zur Terminauswahl" class="calendlyButton primary-btn">Erstgespräch buchen</button>
     </section>
 
 </main>
