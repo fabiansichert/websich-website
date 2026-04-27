@@ -33,7 +33,6 @@
 <?php
     include COMPONENTS_PATH . 'header.php';
     include COMPONENTS_PATH . 'cookie.php';
-    include COMPONENTS_PATH . 'popup.php';
 ?>
 
 <main>

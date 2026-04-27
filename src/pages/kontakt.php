@@ -17,6 +17,7 @@
 </head>
 
 <body class="kontakt-page-body">
+    
 <?php
     include COMPONENTS_PATH . 'header.php';
     include COMPONENTS_PATH . 'cookie.php';

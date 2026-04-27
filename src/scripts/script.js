@@ -148,31 +148,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (barFillEl) barFillEl.style.width = `${pct}%`;
 });
 
-
-// =======================
-// Form Submit UX
-// =======================
-const params = new URLSearchParams(window.location.search);
-const popup = document.getElementById('popup');
-const popupIcon = document.getElementById('popup-icon');
-const popupText = document.getElementById('popup-txt');
-
-if (params.get('success') === 'true') {
-    popup.classList.add('show', 'success');
-    popupIcon.src = '/assets/icons/check.svg'; // grünes Häkchen
-    popupText.textContent = 'Vielen Dank für Ihre Anfrage. Wir melden uns bald.';
-    // Nach 8 Sekunden ausblenden
-    setTimeout(() => popup.classList.remove('show'), 8000);
-}
-
-if (params.get('success') === 'false') {
-    popup.classList.add('show', 'error');
-    popupIcon.src = '/assets/icons/cross.svg'; // rotes Kreuz
-    popupText.textContent = params.get('reason');
-    // Nach 8 Sekunden ausblenden
-    setTimeout(() => popup.classList.remove('show'), 8000);
-}
-
 // =======================
 // Footer Jahr
 // =======================

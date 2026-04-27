@@ -58,7 +58,9 @@ if (cookieBanner && acceptCookies && declineCookies) {
     localStorage.setItem("cookiesAccepted", "false");
   });
 
-  if (localStorage.getItem("cookiesAccepted") === "true") {
+  const cookieChoice = localStorage.getItem("cookiesAccepted");
+
+  if (cookieChoice === "true") {
     cookieBanner.style.display = "none";
 
     loadAnalyticsScript();
@@ -66,5 +68,9 @@ if (cookieBanner && acceptCookies && declineCookies) {
     setTimeout(() => {
       initAnalytics();
     }, 300);
+  }
+
+  if (cookieChoice === "false") {
+    cookieBanner.style.display = "none";
   }
 }
