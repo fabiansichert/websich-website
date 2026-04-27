@@ -26,11 +26,6 @@
     <meta name="twitter:description" content="Individuelles, performantes und sicheres Webdesign – inklusive Webentwicklung, SEO & IT-Security. Alles aus einer Hand für Ihren erfolgreichen Online-Auftritt.">
     <meta name="twitter:image" content="https://websich.de/assets/opengraph/og-image.jpg">
 
-    <link rel="preload" href="/assets/fonts/Merriweather-light.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/Allura-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/images/index/hero-1200.webp" as="image">
-
 </head>
 
 <body>
