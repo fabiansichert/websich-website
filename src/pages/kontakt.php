@@ -14,7 +14,6 @@
 
     <link rel="stylesheet" href="/src/css/kontakt.css?v=1">
     <script defer src="/src/scripts/kontakt.js?v=1"></script>
-    <script defer src="/src/scripts/script.js?v=1"></script>
 </head>
 
 <body class="kontakt-page-body">
