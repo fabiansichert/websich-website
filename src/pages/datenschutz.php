@@ -68,13 +68,12 @@
         <li>Beantwortung von Kontaktanfragen</li>
         <li>Bereitstellung und Betrieb der Webseite</li>
         <li>Analyse und Reichweitenmessung (Google Analytics anonymisiert)</li>
-        <li>Terminbuchungen (Calendly, nur nach Einwilligung)</li>
         <li>Sicherheitsmaßnahmen</li>
     </ul>
 
     <h2>Einsatz von Cookies</h2>
     <p>Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Sie dienen der Nutzerfreundlichkeit und Analyse unseres Onlineangebotes. Sie können die Speicherung von Cookies über Ihre Browsereinstellungen verhindern oder einschränken.</p>
-    <p>Notwendige Cookies werden automatisch gesetzt. Analyse-Cookies (z. B. Google Analytics) und Drittanbieter-Dienste (z. B. Calendly) werden nur nach ausdrücklicher Zustimmung über das Cookie-Banner aktiviert.</p>
+    <p>Notwendige Cookies werden automatisch gesetzt. Analyse-Cookies (z. B. Google Analytics) und Drittanbieter-Dienste werden nur nach ausdrücklicher Zustimmung über das Cookie-Banner aktiviert.</p>
 
     <h2>Google Analytics</h2>
     <p>Wir verwenden Google Analytics ausschließlich zur anonymisierten Reichweitenmessung (IP-Anonymisierung aktiv). Google verarbeitet die Daten nur auf Basis Ihrer Einwilligung. Die erhobenen Daten umfassen:</p>
@@ -84,9 +83,6 @@
         <li>Nutzungsverhalten der Webseite</li>
     </ul>
     <p>Sie können der Datenerfassung jederzeit widersprechen: <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-Out</a></p>
-
-    <h2>Calendly</h2>
-    <p>Zur Terminbuchung setzen wir Calendly ein. Die Nutzung erfolgt nur nach Ihrer Einwilligung. Dabei werden Name, E-Mail-Adresse und Termininformationen übermittelt. Die Daten werden in den USA gespeichert. Eine Weitergabe erfolgt nur nach den Datenschutzrichtlinien von Calendly.</p>
 
     <h2>Kontaktformular</h2>
     <p>Wenn Sie unser Kontaktformular nutzen, verarbeiten wir Ihre Angaben (Vorname, Nachname, E-Mail-Adresse, Telefonnummer, Nachricht), um Ihre Anfrage zu beantworten. Eine Nutzung für Marketing oder Newsletter erfolgt nur nach gesonderter Einwilligung. Die Daten werden für maximal 6 Monate gespeichert und anschließend gelöscht.</p>

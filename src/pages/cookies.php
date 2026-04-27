@@ -57,11 +57,8 @@
 
         <h2>4. Drittanbieter-Einbindungen</h2>
         <p>
-            Wenn Sie zustimmen, werden externe Dienste geladen, wie z. B.:
+            Wenn Sie zustimmen, werden externe Dienste geladen.
         </p>
-        <ul>
-            <li><strong>Calendly</strong> – für Terminbuchungen</li>
-        </ul>
         <p>
             Ohne Ihre Zustimmung werden diese Dienste nicht aktiviert.
         </p>
