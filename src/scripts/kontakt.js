@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.querySelector('[data-kontakt-flow]');
+  const recaptchaSiteKey = '6LeprhIsAAAAAGkqJca9uk0UYotEJNTuLrCgqQMt';
   if (!root) return;
 
   const form = root.querySelector('[data-kontakt-form]');
@@ -127,6 +128,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  function loadRecaptchaScript() {
+    return new Promise((resolve, reject) => {
+      if (window.grecaptcha) return resolve();
+
+      const script = document.createElement('script');
+      script.src = `https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`;
+      script.async = true;
+      script.defer = true;
+      script.onload = resolve;
+      script.onerror = reject;
+
+      document.head.appendChild(script);
+    });
+  }
+
+  async function getRecaptchaToken() {
+    await loadRecaptchaScript();
+
+    return new Promise((resolve, reject) => {
+      grecaptcha.ready(async () => {
+        try {
+          const token = await grecaptcha.execute(recaptchaSiteKey, { action: 'kontakt_submit' });
+          resolve(token);
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+  }
+
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
@@ -165,6 +196,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     try {
+      const recaptchaToken = await getRecaptchaToken();
+      formData.set('g-recaptcha-response', recaptchaToken);
+
       const response = await fetch(form.action, {
         method: 'POST',
         headers: {

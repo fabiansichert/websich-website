@@ -9,8 +9,8 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://websich.de/kontakt">
 
-    <title>Kontakt | Websich</title>
-    <meta name="description" content="Prüfen Sie unverbindlich, ob Ihr Projekt zu Websich passt – strukturiert, klar und mit persönlicher Rückmeldung innerhalb von 24 Stunden.">
+    <title>Eignung prüfen | Websich</title>
+    <meta name="description" content="In einem strukturierten Erstgespräch prüfen wir, ob Ihr Unternehmen von einer Websich-Systemarchitektur profitiert. Persönliche Rückmeldung in 24h.">
 
     <link rel="stylesheet" href="/src/css/kontakt.css?v=1">
     <script defer src="/src/scripts/kontakt.js?v=1"></script>
@@ -73,6 +73,8 @@
                             <input type="hidden" name="readiness" value="">
                             <input type="hidden" name="budget" value="">
                             <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
 
                             <article class="kontakt-step is-active" data-step="1">
                                 <div class="kontakt-step__body">

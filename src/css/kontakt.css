@@ -494,6 +494,10 @@
   display: flex;
 }
 
+.kontakt-success.is-visible ~ .kontakt-progress {
+  display: none;
+}
+
 .kontakt-success__box {
   width: 100%;
   text-align: left;

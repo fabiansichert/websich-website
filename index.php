@@ -9,9 +9,9 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://websich.de/">
 
-    <title>Premium Webdesign für maßgeschneiderte Websites | Websich</title>
-    <meta name="description" content="Premium Webdesign, Webentwicklung, SEO und IT-Security – maßgeschneiderte Websites für Unternehmer, die online professionell auftreten wollen.">
-
+    <title>Websich – Strukturierte Web-Systeme für planbare Nachfrage</title>
+    <meta name="description" content="Websich entwickelt Lead- & Design-Systeme für Unternehmen mit Wachstumsanspruch. Keine Website. Ein System.">
+      
     <!-- OpenGraph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://websich.de/">
