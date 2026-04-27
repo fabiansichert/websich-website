@@ -7,19 +7,23 @@
   </url>
 
   <url>
+    <loc>https://websich.de/kontakt</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://websich.de/impressum</loc>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://websich.de/datenschutz</loc>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://websich.de/cookies</loc>
-    <priority>0.8</priority>
+    <priority>0.3</priority>
   </url>
-  
-</urlset>
 
+</urlset>

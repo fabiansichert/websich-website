@@ -23,6 +23,7 @@ Redirect 301 /html/agb.html /
 # ==========================================================
 # Pretty URLs für neue Seiten
 # ==========================================================
+RewriteRule ^kontakt/?$ /src/pages/kontakt.php [L]
 RewriteRule ^datenschutz/?$ /src/pages/datenschutz.php [L]
 RewriteRule ^cookies/?$ /src/pages/cookies.php [L]
 RewriteRule ^impressum/?$ /src/pages/impressum.php [L]

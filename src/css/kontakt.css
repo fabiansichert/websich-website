@@ -1,0 +1,679 @@
+/* =========================
+   KONTAKT / EIGNUNGSPRÜFUNG
+========================= */
+
+/* =========================
+   PAGE BACKGROUND
+========================= */
+
+#kontakt-page {
+  position: relative;
+  min-height: calc(100vh - 100px);
+  padding: 0;
+  overflow: hidden;
+}
+
+#kontakt-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      rgba(222, 214, 199, 0.06) 0,
+      rgba(222, 214, 199, 0.06) 1px,
+      transparent 1px,
+      transparent 70px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(222, 214, 199, 0.06) 0,
+      rgba(222, 214, 199, 0.06) 1px,
+      transparent 1px,
+      transparent 70px
+    );
+  pointer-events: none;
+}
+
+#kontakt-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 600px at 30% 40%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.35) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.kontakt-shell {
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem var(--wrapper) 4rem;
+}
+
+.kontakt-layout {
+  width: 100%;
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(440px, 0.85fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.kontakt-intro,
+.kontakt-card {
+  background: rgba(27, 50, 63, 0.78);
+  border: 1px solid rgba(222, 214, 199, 0.18);
+  border-radius: 1.35rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================
+   INTRO LEFT SIDE
+========================= */
+
+.kontakt-intro {
+  display: flex;
+  align-items: center;
+  min-height: 620px;
+  padding: 2.4rem 2.6rem;
+}
+
+.kontakt-intro__inner {
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kontakt-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(222, 214, 199, 0.72);
+}
+
+.kontakt-intro h1 {
+  font-size: clamp(2.5rem, 3vw, 3.4rem);
+  line-height: 1.02;
+  margin-bottom: 0.35rem;
+}
+
+.kontakt-intro p {
+  max-width: 34rem;
+  opacity: 0.88;
+  font-size: 1rem;
+}
+
+.kontakt-note {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+
+/* =========================
+   PERSON BOX
+========================= */
+
+.kontakt-person {
+  margin-top: 0.75rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-radius: 1rem;
+  background: rgba(20, 34, 42, 0.45);
+  border: 1px solid rgba(222, 214, 199, 0.12);
+}
+
+.kontakt-person__avatar {
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.kontakt-person__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.kontakt-person__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.kontakt-person__meta strong {
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.kontakt-person__meta span,
+.kontakt-person__meta small {
+  color: rgba(222, 214, 199, 0.72);
+  font-size: 0.88rem;
+}
+
+
+/* =========================
+   CARD / FORM WRAPPER
+========================= */
+
+.kontakt-card {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  min-height: 620px;
+}
+
+.kontakt-card__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakt-form {
+  height: 100%;
+}
+
+.kontakt-form.is-hidden {
+  display: none;
+}
+
+
+/* =========================
+   MOBILE HEAD
+========================= */
+
+.kontakt-mobile-head {
+  display: none;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-bottom: 1.2rem;
+}
+
+.kontakt-mobile-head h1 {
+  font-size: clamp(2rem, 7.6vw, 2.5rem);
+  line-height: 108%;
+  margin: 0;
+  max-width: 10ch;
+}
+
+.kontakt-mobile-head p {
+  font-size: 0.95rem;
+  line-height: 155%;
+  opacity: 0.82;
+  max-width: 26rem;
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.kontakt-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.kontakt-progress__label {
+  flex: 0 0 auto;
+  font-size: 0.95rem;
+  color: rgba(222, 214, 199, 0.8);
+}
+
+.kontakt-progress__bar {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(222, 214, 199, 0.32);
+  overflow: hidden;
+}
+
+.kontakt-progress__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 20%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #e9ab72 0%, #d89a62 100%);
+  transition: width 0.28s ease;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+.kontakt-step {
+  display: none;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.kontakt-step.is-active {
+  display: flex;
+}
+
+.kontakt-step__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kontakt-step__body h2 {
+  font-size: clamp(1.35rem, 5.9vw, 1.75rem);
+  line-height: 118%;
+  max-width: 50ch;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.kontakt-step--final .kontakt-step__body h2 {
+  max-width: 100%;
+}
+
+
+/* =========================
+   OPTIONS
+========================= */
+
+.kontakt-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.kontakt-option {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 1.1rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(222, 214, 199, 0.08);
+  background: rgba(51, 71, 82, 0.92);
+  color: var(--text-color);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 135%;
+  cursor: pointer;
+  transition: 0.18s ease;
+}
+
+.kontakt-option:hover,
+.kontakt-option:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(233, 171, 114, 0.48);
+  background: rgba(60, 82, 94, 0.98);
+  opacity: 1;
+}
+
+.kontakt-option.is-selected {
+  border-color: rgba(233, 171, 114, 0.75);
+  background: rgba(233, 171, 114, 0.16);
+  box-shadow: 0 0 0 1px rgba(233, 171, 114, 0.2) inset;
+}
+
+
+/* =========================
+   FIELDS
+========================= */
+
+.kontakt-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.kontakt-field,
+.kontakt-checkbox,
+.kontakt-hint {
+  width: 100%;
+}
+
+.kontakt-field--full {
+  grid-column: 1 / -1;
+}
+
+.kontakt-field label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: rgba(222, 214, 199, 0.86);
+  font-size: 0.95rem;
+}
+
+.kontakt-field input,
+.kontakt-field textarea {
+  width: 100%;
+  background: rgba(20, 34, 42, 0.85);
+  border: 1px solid rgba(222, 214, 199, 0.22);
+}
+
+.kontakt-field textarea {
+  min-height: 140px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.kontakt-field input:focus,
+.kontakt-field textarea:focus {
+  outline: none;
+  border-color: rgba(233, 171, 114, 0.68);
+  box-shadow: 0 0 0 3px rgba(233, 171, 114, 0.1);
+}
+
+
+/* =========================
+   CHECKBOX / HINT
+========================= */
+
+.kontakt-checkbox {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding-top: 0.3rem;
+}
+
+.kontakt-checkbox input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.2rem;
+  accent-color: var(--accent-color);
+}
+
+.kontakt-checkbox label {
+  color: rgba(222, 214, 199, 0.82);
+  font-size: 0.92rem;
+  line-height: 155%;
+}
+
+.kontakt-checkbox a {
+  text-decoration: underline;
+}
+
+.kontakt-hint {
+  min-height: 1.3rem;
+  color: #ffb4b4;
+  font-size: 0.9rem;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.kontakt-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.kontakt-actions__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.9rem;
+  width: 100%;
+}
+
+.kontakt-back {
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(222, 214, 199, 0.35);
+  background: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+  flex-shrink: 0;
+}
+
+.kontakt-back:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(222, 214, 199, 0.6);
+}
+
+.kontakt-back svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.kontakt-next,
+.kontakt-submit {
+  min-width: 132px;
+  min-height: 52px;
+  border-radius: 0.8rem;
+}
+
+.kontakt-submit {
+  padding-inline: 1.8rem;
+}
+
+
+/* =========================
+   SUCCESS STATE
+========================= */
+
+.kontakt-success {
+  display: none;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.kontakt-success.is-visible {
+  display: flex;
+}
+
+.kontakt-success__box {
+  width: 100%;
+  text-align: left;
+  padding: 2rem;
+  border-radius: 1.15rem;
+  background: rgba(20, 34, 42, 0.58);
+  border: 1px solid rgba(222, 214, 199, 0.14);
+}
+
+.kontakt-success__box h2 {
+  margin-bottom: 1rem;
+}
+
+.kontakt-success__box p + p {
+  margin-top: 0.8rem;
+}
+
+
+/* =========================
+   HEADER ON KONTAKT PAGE
+========================= */
+
+.kontakt-page-body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontakt-page-body header #desktop,
+.kontakt-page-body header #header-btn,
+.kontakt-page-body header #mobile {
+  display: none !important;
+}
+
+.kontakt-page-body header #logo {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontakt-page-body header #logo a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================
+   HONEYPOT
+========================= */
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* =========================
+   RESPONSIVE: <= 1120px
+========================= */
+
+@media (max-width: 1120px) {
+  .kontakt-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 0.9fr);
+  }
+
+  .kontakt-intro {
+    padding: 2.25rem;
+  }
+
+  .kontakt-card {
+    padding: 1.7rem;
+  }
+
+  .kontakt-step__body h2 {
+    font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  }
+}
+
+
+/* =========================
+   RESPONSIVE: <= 920px
+========================= */
+
+@media (max-width: 920px) {
+
+  #kontakt-page .kontakt-card.right {
+    transform: none;
+  }
+
+  .kontakt-shell {
+    min-height: auto;
+    padding-top: 1.25rem;
+  }
+
+  .kontakt-layout {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+  }
+
+  .kontakt-intro {
+    display: none;
+  }
+
+  .kontakt-card {
+    min-height: auto;
+  }
+
+  .kontakt-mobile-head {
+    display: flex;
+  }
+
+  .kontakt-mobile-head p {
+    opacity: 0.9;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE: <= 640px
+========================= */
+
+@media (max-width: 640px) {
+
+  #kontakt-page {
+    overflow-x: hidden;
+  }
+
+  .kontakt-shell {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .kontakt-layout {
+    width: 100%;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  .kontakt-card {
+    width: 100%;
+    margin: 0;
+    padding: 1.25rem 1.15rem 1.4rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+  }
+
+  .kontakt-mobile-head {
+    display: flex;
+  }
+
+  .kontakt-step__body {
+    justify-content: flex-start;
+  }
+
+  .kontakt-step__body h2 {
+    font-size: clamp(1.5rem, 6vw, 1.9rem);
+    line-height: 1.15;
+    margin-bottom: 1.3rem;
+  }
+
+  .kontakt-options,
+  .kontakt-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .kontakt-option {
+    padding: 0.95rem;
+    font-size: 0.95rem;
+  }
+
+  .kontakt-actions {
+    margin-top: 1.4rem;
+  }
+
+  .kontakt-success__box {
+    padding: 1.3rem;
+  }
+}

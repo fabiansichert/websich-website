@@ -1,38 +1,16 @@
 @font-face {
-    font-family: 'Merriweather-regular';
+    font-family: 'Merriweather';
     font-display: swap;
-    src: url('/assets/fonts/Merriweather-regular.woff2') format('woff2'); 
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Merriweather-light';
-    font-display: swap;
-    src: url('/assets/fonts/Merriweather-light.woff2') format('woff2'); 
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Merriweather-bold';
-    font-display: swap;
-    src: url('/assets/fonts/Merriweather-bold.woff2') format('woff2'); 
-    font-weight: normal;
+    src: url('/assets/fonts/Merriweather.woff2') format('woff2'); 
+    font-weight: 100 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Outfit';
+    font-family: 'Inter';
     font-display: swap;
-    src: url('/assets/fonts/Outfit.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Allura';
-    font-display: swap;
-    src: url('/assets/fonts/Allura-Regular.woff2') format('woff2');
-    font-weight: normal;
+    src: url('/assets/fonts/Inter.woff2') format('woff2');
+    font-weight: 100 900;
     font-style: normal;
 }
 
@@ -46,15 +24,18 @@
 
     /*Background-Colors*/
     --background-color: #14222A;
-    --background-cards-color: #1A2733;
-    --background-bright-color: #1B323F;
+    --background-color-2: #1B323F;
+    --background-color-3: #334752;
 
     /*Font*/
-    --highlight-color: #C9A14A;
-    --highlight-color-2: #E9AB72;
-    --heading-color: #DED6C7;
-    --text-color: #82888E;
-    --error-msg-color: rgb(200, 100, 100);
+    --accent-color: #E9AB72;
+    --dark-accent-color: #836040;
+    --action-color: #C9A14A;
+    --text-color: #DED6C7;
+    --text-color-dark: #222222;
+
+    --error-color: #861919;
+    --success-color: #278833;
 
     /*Attribute*/
     --wrapper: 8%;
@@ -62,13 +43,10 @@
 
 }
 
-
-
 body {
     overflow-x: hidden;
     max-width: 100%;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -80,35 +58,46 @@ body {
     width: 100%;
     min-width: 320px;
     background-color: var(--background-color);
-    font-family: "Outfit";
+    font-family: "Inter";
 }
 
-h1,h2,h3,h4 {
-    font-family: "Merriweather-light";
-    font-weight: lighter;
-}
+
 h1 {
-    color: var(--heading-color);
-    font-size: 6rem;
-    line-height: 100%;
-    letter-spacing: -2px;
-}
-h2 {
-    color: var(--highlight-color);
-    font-size: 3rem;
-}
-h3 {
-    color: var(--heading-color);
-    font-size: 2rem;
-}
-h4 {
-    color: var(--heading-color);
-    font-size: 1.6rem;
+    color: var(--text-color);
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    font-weight: 700;
 }
 
-p,li{
+h2 {
     color: var(--text-color);
-    font-size: 1.3rem;
+    font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+    line-height: 125%;
+    font-weight: 600;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+    line-height: 130%;
+    font-weight: 600;
+}
+
+.font-highlight {
+    font-family: "Merriweather";
+    font-weight: 600;
+}
+
+.font-accent-color {
+    color: var(--accent-color);
+}
+
+
+p, li {
+    color: var(--text-color);
+    font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+    line-height: 170%;
 }
 
 a {
@@ -116,7 +105,7 @@ a {
 }
 
 a, label { 
-    color: var(--heading-color); 
+    color: var(--text-color); 
     text-decoration: none; 
     transition: 0.1s ease;
 }
@@ -127,9 +116,9 @@ a:hover {
 input,textarea {
     padding: 1rem 0.8rem;
     background-color: var(--background-color);
-    border: 1px solid var(--heading-color);
+    border: 1px solid var(--text-color);
     border-radius: var(--border-radius);
-    color: var(--heading-color);
+    color: var(--text-color);
     font-size: 1rem;
 }
 
@@ -169,15 +158,16 @@ img {
 }
 
 
-
-/*Button*/
-button {
-    font-size: 1.2rem;
+button,
+.primary-btn {
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    padding: 0.85rem 1.6rem;
+    font-weight: 600;
     padding: 0.8rem 1.3rem;
     transition: 0.2s ease;
     border-radius: var(--border-radius);
-    font-weight: bold;
     border: none;
+    color: var(--text-color-dark);
 }
 
 button:disabled {
@@ -193,11 +183,11 @@ button:disabled {
     align-items: center;
     gap: 0.1rem;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--background-color);
     border: none;
     border-radius: 0.5rem;
-    background: linear-gradient(135deg, var(--highlight-color) 0%, var(--highlight-color) 50%, var(--highlight-color) 100%);
+    background: linear-gradient(135deg, var(--action-color) 0%, var(--action-color) 50%, var(--action-color) 100%);
     background-size: 200% 200%;
     transition: all 0.4s ease;
     box-shadow: 0 0 10px rgba(201, 161, 74, 0.4);
@@ -223,7 +213,6 @@ button:disabled {
 
 .primary-btn:hover {
     background-position: 100% 0;
-    box-shadow: 0 0 25px rgba(233, 171, 114, 0.7), 0 0 50px rgba(201, 161, 74, 0.5);
 }
 
 .primary-btn:hover::before {
@@ -239,59 +228,15 @@ button:disabled {
     }
 }
 
-.primary-btn .small-txt {
-    display: flex;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 200;
-    opacity: 0.7;
-}
-
-.secundary-btn {
-    background-color: transparent;
-    color: var(--heading-color);
-    border: 2px solid var(--heading-color);
-}
-
-.img-btn {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    background: linear-gradient(
-        to bottom,  
-        var(--background-cards-color) -50%,
-        var(--background-bright-color) 100%
-    );
-    border: 1px solid var(--highlight-color);
-}
 
 /* Gilt nur für "normale" Buttons, nicht den Hamburger */
 button:not(#hamburger):hover {
   cursor: pointer;
   opacity: 0.8;
-  transform: scale(1.05);
-  border-radius: 10px;
 }
 
 button:disabled:hover {
     transform: scale(1) !important;
-}
-
-
-
-.h2-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.h2-heading span {
-    font-size: 1.5rem;
 }
 
 .grid {
@@ -319,7 +264,7 @@ button:disabled:hover {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-family: Arial, sans-serif;
+    font-family: "Inter";
     font-size: 14px;
     opacity: 0;
     pointer-events: none;
@@ -347,12 +292,12 @@ button:disabled:hover {
 
 /* Erfolgsfarben */
 #popup.success {
-    border-left: 4px solid var(--highlight-color);
+    border-left: 4px solid var(--success-color);
 }
 
 /* Fehlerfarben */
 #popup.error {
-    border-left: 4px solid var(--error-msg-color);
+    border-left: 4px solid var(--error-color);
 }
 
 
@@ -417,7 +362,7 @@ button:disabled:hover {
 }
 
 .legal-page a:hover {
-    color: var(--heading-color);
+    color: var(--text-color);
 }
 
 .legal-page ul,
@@ -474,7 +419,7 @@ button:disabled:hover {
   left: 0;
   width: 100%;
   background: var(--background-cards-color);
-  color: var(--heading-color);
+  color: var(--text-color);
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -495,7 +440,7 @@ button:disabled:hover {
 }
 
 .cookie-banner button {
-  background: var(--highlight-color);
+  background: var(--accent-color);
   border: none;
   padding: 0.5rem 1rem;
   color: var(--background-color);
@@ -531,7 +476,7 @@ header {
     background: linear-gradient(
         to right,  
         var(--background-color) 0%,
-        var(--background-bright-color) 100%
+        var(--background-color-2) 100%
     );
 
 }
@@ -551,7 +496,7 @@ header #mobile {
     background: linear-gradient(
         to right,  
         var(--background-color) 0%,
-        var(--background-bright-color) 100%
+        var(--background-color-2) 100%
     );
     padding: 1rem var(--wrapper) 2rem var(--wrapper);
 
@@ -563,6 +508,7 @@ header #mobile {
         max-height 0.5s cubic-bezier(0.33, 1, 0.68, 1),
         opacity 0.4s ease,
         transform 0.4s ease;
+    border-top: 1px solid var(--accent-color);
 }
 
 header #mobile.active {
@@ -586,6 +532,7 @@ header #mobile a img {
 header #mobile span {
     border-left: 2px solid var(--text-color);
     padding-left: 0.5rem;
+    opacity: 0.7;
 }
 
 header #logo {
@@ -619,7 +566,7 @@ header #header-btn #header-cta {
   justify-content: space-between;
   padding: 1rem !important;
   background: none;
-  border: 1px solid var(--heading-color);
+  border: 1px solid var(--text-color);
   cursor: pointer;
   z-index: 1000;
   gap: 0.5rem;
@@ -630,7 +577,7 @@ header #header-btn #header-cta {
   display: block;
   width: 1.8rem;
   height: 2px;
-  background-color: var(--heading-color);
+  background-color: var(--text-color);
   border-radius: var(--border-radius);
   transition:
     transform 1s cubic-bezier(.2,.9,.3,1);
@@ -658,7 +605,6 @@ header #header-btn #header-cta {
 main {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
 }
 
 /*MAIN*/
@@ -685,7 +631,7 @@ footer {
         var(--background-bright-color) 100%
     );
     min-height: 50vh;
-    border-top: 1px solid var(--highlight-color);
+    border-top: 1px solid var(--accent-color);
     gap: 5rem;
 }
 
@@ -694,7 +640,7 @@ footer a {
 }
 
 footer .title {
-    color: var(--heading-color);
+    color: var(--text-color);
     font-family: "Merriweather-light";
     font-size: 1.5rem;
 }
@@ -766,6 +712,13 @@ footer #footer-bottom #legal-links {
     gap: 2rem;
 }
 
+footer #copyright {
+    display: block;
+    margin-top: 1rem;
+    line-height: 150%;
+    opacity: 0.7;
+}
+
 
 /* Große Desktops (bis 1920px) */
 @media (max-width: 1920px) {
@@ -784,16 +737,6 @@ footer #footer-bottom #legal-links {
 /* Tablets (bis 1024px) */
 @media (max-width: 1024px) {
   /*  header { background-color: orange; }*/
-
-    h1 {
-        font-size: 4rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
 
     .h2-heading span {
         font-size: 1.25rem;
@@ -842,6 +785,11 @@ footer #footer-bottom #legal-links {
     footer #footer-bottom {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    footer #copyright {
+        width: 100%;
+        text-align: center;
     }
 
 }
