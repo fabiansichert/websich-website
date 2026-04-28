@@ -251,58 +251,6 @@ button:disabled:hover {
     display: none !important;
 }
 
-
-/* Popup Container */
-#popup {
-    position: fixed;
-    top: 120px;
-    right: 20px;
-    background-color: var(--background-bright-color);
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-family: "Inter";
-    font-size: 14px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(200px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 9999;
-}
-
-#popup span {
-    color: var(--heading-msg-color);
-}
-
-/* Popup sichtbar */
-#popup.show {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(0);
-}
-
-/* Icon im Popup */
-#popup-icon {
-    width: 24px;
-    height: 24px;
-}
-
-/* Erfolgsfarben */
-#popup.success {
-    border-left: 4px solid var(--success-color);
-}
-
-/* Fehlerfarben */
-#popup.error {
-    border-left: 4px solid var(--error-color);
-}
-
-
-
-
 #error-page {
     gap: 0.5rem;
 }
@@ -418,7 +366,7 @@ button:disabled:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: var(--background-cards-color);
+  background: var(--background-color-3);
   color: var(--text-color);
   padding: 1rem 1.5rem;
   display: flex;
@@ -627,8 +575,8 @@ footer {
     padding: var(--wrapper);
     background: linear-gradient(
         to bottom,  
-        var(--background-color) 0%,
-        var(--background-bright-color) 100%
+        var(--background-color-2) 0%,
+        var(--background-color) 100%
     );
     min-height: 50vh;
     border-top: 1px solid var(--accent-color);
