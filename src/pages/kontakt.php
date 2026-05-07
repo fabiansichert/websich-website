@@ -145,9 +145,9 @@
                                 <div class="kontakt-step__body">
                                     <h2>In welchem Rahmen planen Sie Ihr Systemprojekt?</h2>
                                     <div class="kontakt-options">
+                                        <button type="button" class="kontakt-option" data-key="budget" data-value="3.000 € – 8.000 €">3.000 € – 8.000 €</button>
                                         <button type="button" class="kontakt-option" data-key="budget" data-value="8.000 € – 15.000 €">8.000 € – 15.000 €</button>
-                                        <button type="button" class="kontakt-option" data-key="budget" data-value="15.000 € – 30.000 €">15.000 € – 30.000 €</button>
-                                        <button type="button" class="kontakt-option" data-key="budget" data-value="30.000 €+">30.000 €+</button>
+                                        <button type="button" class="kontakt-option" data-key="budget" data-value="15.000 €+">15.000 €+</button>
                                     </div>
                                 </div>
 
