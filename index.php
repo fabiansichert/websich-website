@@ -41,7 +41,7 @@
   <div class="hero-inner">
     <div class="hero-content">
       <h1>
-        Premium Marken brauchen <span class="font-highlight">keine</span> Website.<br/>
+        Starke Marken brauchen <span class="font-highlight">keine</span> Website.<br/>
         Sie brauchen ein <span class="hero-accent font-highlight">System.</span>
       </h1>
 
